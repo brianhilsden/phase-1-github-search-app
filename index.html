@@ -4,22 +4,23 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
   <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src='js/index.js' defer></script>
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
-  <div id='main'>
+  <div id='main' class="container">
 
-    <h2>GitHub Search</h2>
-    <button id="toggle" style="margin-bottom: 0.3rem;">Choice: Users</button>
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
-      
+    <h2 class="mt-5 mb-3">GitHub Search</h2>
+    <button id="toggle" class="btn btn-primary mb-3">Choice: Users</button>
+    <form id='github-form' class="form-inline mb-4">
+      <input id='search' type='text' name='search' class="form-control mr-2">
+      <input type='submit' name='submit' class="btn btn-success"/>
+
     </form>
 
     <div id='github-container'>
-      <ul id='user-list'>
+      <ul id='user-list' >
 
       </ul>
 
